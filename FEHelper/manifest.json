@@ -1,0 +1,40 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "static/js/core/jquery-1.5.min.js", "static/js/mod/mod_background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "static/img/fe-16.png",
+      "default_popup": "template/fehelper_popup.html",
+      "default_title": "FE前端工具"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "static/js/core/jquery-1.5.min.js", "static/vendor/jquery-ui-1.8/js/jquery-ui-1.8.11.custom.min.js", "static/js/mod/mod_manifest.js" ],
+      "matches": [ "http://*/*", "https://*/*", "file://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "static/js/fe-contentscript-fehelper.js" ],
+      "matches": [ "http://*.baidufe.com/fehelper/*", "http://*.baidufe.com/fehelper" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com 'unsafe-eval'; object-src 'self'",
+   // "default_locale": "zh_CN",
+   "description": "FE助手",
+   "homepage_url": "http://www.baidufe.com/fehelper",
+   "icons": {
+      "128": "static/img/fe-128.png",
+      "16": "static/img/fe-16.png",
+      "48": "static/img/fe-48.png"
+   },
+   // "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCkkIY0Mapkm3PZ08zRKVaRhC988S5xg9REf6g7rrexMVA4Ku+19fIlI0KrKLDl4SEubKotUgJiro4vMN+tnmlPd/4qPYgUUgms7pEJJTUpQrYziRA16v8vadwkaz07S3WmabxJ5hHn0TdTOpXq4TaNb4Tx3r2nvkYNcnbk2b3gvwIDAQAB",
+   // "key": "",
+   "manifest_version": 2,
+   "name": "FE前端工具",
+   "options_page": "template/fehelper_options.html",
+   "permissions": [ "tabs", "contextMenus", "cookies", "notifications", "alarms", "webNavigation", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0",
+   "web_accessible_resources": [ "static/img/43.png", "static/img/baidufe_bj.png", "static/img/baidufe_bj.gif", "static/img/grid.png", "static/img/fe-18.png", "static/img/fe-48.png", "static/img/fe-128.png", "static/img/pbar-ani.gif", "static/img/ui-icons_228ef1_256x240.png", "static/css/fe-helper.css", "static/css/fe-jsonformat.css", "static/vendor/jquery-ui-1.8/css/jquery-ui-1.8.16.custom.hot_datauri.css" ]
+}

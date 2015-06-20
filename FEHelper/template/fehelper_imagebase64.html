@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<title>图片Base64编码工具（DataURI数据）</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/css/fe-imagebase64_datauri.css">
+	<script src="../static/js/core/jquery-1.5.min.js"></script>
+	<script src="../static/js/mod/mod_imagebase64.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="panel panel-default" style="margin-bottom: 0px;">
+		<div class="panel-heading">
+			<h3 class="panel-title">图片Base64编码工具</h3>
+		</div>
+	</div>
+	<div class="panel-body mod-imagebase64">
+		<div class="row">
+			<table>
+				<tr>
+					<td>
+						<div class="x-panel">
+							<img id="preview">
+							<div class="x-tips">
+								<a id="upload" class="btn btn-primary btn-lg" href="#">选择图片</a><br>
+								或者选择一张图片拖拽图片到这里来
+							</div>
+						</div>
+					</td>
+					<td>
+						<textarea id="result" title="点击自动选择" placeholder="自动生成编码" readonly></textarea>
+					</td>
+				</tr>
+			</table>
+			<form action="#">
+				<input type="file" id="file" accept=".jpg,.jpeg,.gif,.png,.bmp">
+			</form>
+			<img id="img">
+		</div>
+	</div>
+</div>
+</body>
+</html>

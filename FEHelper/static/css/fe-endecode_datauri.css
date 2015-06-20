@@ -1,0 +1,15 @@
+html {
+    font-size:14px
+}
+body {
+    font-family:Arial, "simsun";
+    color:#666
+}
+.mod-endecode {
+    width: 980px;
+    margin: 0 auto
+}
+textarea.mod-textarea{
+	height: 80px;
+	resize: none;
+}

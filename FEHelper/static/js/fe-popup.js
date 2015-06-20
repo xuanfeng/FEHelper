@@ -1,0 +1,1 @@
+$(function(){var a=chrome.extension.getBackgroundPage();jQuery("ul.fe-function-list li").click(function(d){var b=$(this).attr("data-msgtype");var c=$(this).attr("data-usefile");a.BgPageInstance.runHelper({msgType:MSG_TYPE[b],useFile:c});window.close()})});

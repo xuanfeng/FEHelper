@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<title>Json格式化查看工具</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/css/fe-jsonformat_datauri.css">
+	<link rel="stylesheet" href="../static/css/fe-common.css">
+	<script src="../static/js/core/jquery-1.5.min.js"></script>
+	<script src="../static/js/mod/mod_jsonformat.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<div class="panel panel-default" style="margin-bottom: 0px;">
+		<div class="panel-heading">
+			<h3 class="panel-title">JSON格式化查看</h3>
+		</div>
+	</div>
+	<div class="panel-body mod-json">
+		<div class="row">
+			<textarea class="form-control mod-textarea" id="jsonSource" placeholder="在这里粘贴您需要进行格式化的JSON代码"></textarea>
+			<button id="btnFormat" class="btn btn-primary ui-fl-r ui-mt-10">格式化</button>
+		</div>
+
+		<div class="row ui-mt-20 ui-d-n rst-item" id="mod-json-result">
+			<div id="formattingMsg">
+				<svg id="spinner" width="16" height="16" viewbox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1"><path d="M 150,0 a 150,150 0 0,1 106.066,256.066 l -35.355,-35.355 a -100,-100 0 0,0 -70.711,-170.711 z" fill="#3d7fe6"></path></svg>加载中...
+			</div>
+			<div id="jfContent"></div>
+			<pre id="jfContent_pre"></pre>
+		</div>
+	</div>
+</div>
+</body>
+</html>
