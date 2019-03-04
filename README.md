@@ -20,6 +20,16 @@ http://xuanfengge.com/tool/FEHelper/template/fehelper_jsonformat.html
 ##时间戳转换工具
 http://xuanfengge.com/tool/FEHelper/template/fehelper_timestamp.html
 
+##表格转换工具
+http://tableconvert.com/
+
+##JSONPath工具
+https://www.rdtoc.com/tools/jsonpath
+
+##JMESPath工具
+https://www.rdtoc.com/tools/jmespath
+
+
 ##安装插件
 由于插件没有放置Chrome store，会安装失败，以下是解决方案
 
